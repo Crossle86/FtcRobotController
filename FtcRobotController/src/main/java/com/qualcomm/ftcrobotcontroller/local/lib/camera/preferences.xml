@@ -1,0 +1,9 @@
+<!-- insert this xml at the bottom of the res.xml.preferences.xml file before </preferencecategory>. -->
+
+<PreferenceScreen
+    android:title="Team Local Settings"
+    android:key="launchlocalsettings">
+    <intent
+        android:targetPackage="com.qualcomm.ftcrobotcontroller"
+        android:targetClass="com.qualcomm.ftcrobotcontroller.local.activities.SettingsActivity" />
+</PreferenceScreen>

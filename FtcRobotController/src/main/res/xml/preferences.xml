@@ -68,5 +68,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:targetPackage="com.qualcomm.ftccommon"
         android:targetClass="com.qualcomm.ftccommon.configuration.AutoConfigureActivity" />
     </PreferenceScreen>
-  </PreferenceCategory>
+
+    <PreferenceScreen
+        android:title="Team Local Settings"
+        android:key="launchlocalsettings">
+      <intent
+          android:targetPackage="com.qualcomm.ftcrobotcontroller"
+          android:targetClass="com.qualcomm.ftcrobotcontroller.local.activities.SettingsActivity" />
+    </PreferenceScreen>  </PreferenceCategory>
 </PreferenceScreen>

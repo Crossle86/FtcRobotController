@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+      android:title="@string/title_local_settings">
+
+      <CheckBoxPreference
+          android:title="Logging"
+          android:key="logging"
+          android:defaultValue="true"
+          />
+
+    <ListPreference
+        android:title="Select Auto Program"
+        android:key="AutoProgram"
+        android:entries="@array/AutoNames"
+        android:entryValues="@array/AutoValues"
+        android:defaultValue="1"
+        />
+  </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- copy this file to the res.layout directory -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="125dp"
+    android:layout_below="@+id/textErrorMessage"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/previewLayout">
+</FrameLayout>
