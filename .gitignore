@@ -24,5 +24,8 @@ Thumbs.db
 .gradle
 build/
 
+#Backups
+*.zip
+
 *ASUS_PC_01*
 
