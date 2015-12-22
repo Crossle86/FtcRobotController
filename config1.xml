@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot>
+    <DeviceInterfaceModule name="DIM1" serialNumber="AL00VCRA">
+        <I2cDevice name="MR_Color" port="0" />
+        <TouchSensor name="I_touch" port="0" />
+    </DeviceInterfaceModule>
+    <ServoController name="Servo Controller 1" serialNumber="AL00VDCW">
+        <Servo name="S_upDown" port="1" />
+        <Servo name="S_sideSide" port="2" />
+    </ServoController>
+    <MotorController name="Motor Controller 2" serialNumber="AL00YD78">
+        <Motor name="M_driveLeft" port="1" />
+        <Motor name="M_driveRight" port="2" />
+    </MotorController>
+</Robot>

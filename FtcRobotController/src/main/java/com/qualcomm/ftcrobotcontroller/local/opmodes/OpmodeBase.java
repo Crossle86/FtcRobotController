@@ -17,7 +17,7 @@ public class OpmodeBase extends OpMode
 {
     // hardware declarations
     DcMotorController wheelController;
-    DcMotorController.DeviceMode devMode;
+    //DcMotorController.DeviceMode devMode;
     DcMotor M_driveRight;
     DcMotor M_driveLeft;
     TouchSensor I_touch;
@@ -56,12 +56,12 @@ public class OpmodeBase extends OpMode
         S_upDown = hardwareMap.servo.get("S_upDown");
         S_sideSide = hardwareMap.servo.get("S_sideSide");
         //I_gyro = hardwareMap.gyroSensor.get("I_gyro");
-        devMode = DcMotorController.DeviceMode.WRITE_ONLY;
+        //devMode = DcMotorController.DeviceMode.WRITE_ONLY;
         M_driveRight.setDirection(DcMotor.Direction.REVERSE);
-        M_driveRight.setChannelMode(DcMotorController.RunMode.RESET_ENCODERS);
-        M_driveLeft.setChannelMode(DcMotorController.RunMode.RESET_ENCODERS);
-        M_driveRight.setChannelMode(DcMotorController.RunMode.RUN_WITHOUT_ENCODERS);
-        M_driveLeft.setChannelMode(DcMotorController.RunMode.RUN_WITHOUT_ENCODERS);
+//        M_driveRight.setChannelMode(DcMotorController.RunMode.RESET_ENCODERS);
+//        M_driveLeft.setChannelMode(DcMotorController.RunMode.RESET_ENCODERS);
+//        M_driveRight.setChannelMode(DcMotorController.RunMode.RUN_WITHOUT_ENCODERS);
+//        M_driveLeft.setChannelMode(DcMotorController.RunMode.RUN_WITHOUT_ENCODERS);
 
         // set sensors.
         I_touch = hardwareMap.touchSensor.get("I_touch");
