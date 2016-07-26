@@ -29,9 +29,9 @@ public class ColorSample extends LinearOpMode
     @Override
     public void runOpMode() throws InterruptedException
     {
-        leftMotor = hardwareMap.dcMotor.get("M_driveLeft");
-        rightMotor = hardwareMap.dcMotor.get("M_driveRight");
-        rightMotor.setDirection(DcMotor.Direction.REVERSE);
+        //leftMotor = hardwareMap.dcMotor.get("M_driveLeft");
+        //rightMotor = hardwareMap.dcMotor.get("M_driveRight");
+        //rightMotor.setDirection(DcMotor.Direction.REVERSE);
 
         AppUtil.setControllerApp(hardwareMap.appContext);
 
@@ -52,8 +52,8 @@ public class ColorSample extends LinearOpMode
         {
             while (opModeIsActive())
             {
-                rightMotor.setPower(gamepad1.right_stick_y);
-                leftMotor.setPower(gamepad1.left_stick_y);
+                //rightMotor.setPower(gamepad1.right_stick_y);
+                //leftMotor.setPower(gamepad1.left_stick_y);
 
                 if (gamepad1.left_stick_y != 0.0) Util.log("left stick=%f", gamepad1.left_stick_y);
 
@@ -86,8 +86,8 @@ public class ColorSample extends LinearOpMode
         Util.log("after loop");
         Util.telemetry("Mode", "after loop");
 
-        rightMotor.setPower(0);
-        leftMotor.setPower(0);
+        //rightMotor.setPower(0);
+        //leftMotor.setPower(0);
 
         Util.log("done");
     }
