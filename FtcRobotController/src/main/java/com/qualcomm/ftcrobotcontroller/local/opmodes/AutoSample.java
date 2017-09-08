@@ -1,5 +1,5 @@
 // simple autonomous program that drives bot in a square pattern then ends.
-// this code assumes it will end before the period is over but if the period ended whilef
+// this code assumes it will end before the period is over but if the period ended while
 // still driving, this code would just stop.
 
 package com.qualcomm.ftcrobotcontroller.local.opmodes;
